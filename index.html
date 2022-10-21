@@ -12,9 +12,17 @@
     span,
     p,
     pre,
-    label {
+    label,
+    li {
       color: white;
     }
+    .value {
+      color: #357EC7;
+    }
+    .key {
+      color: white;
+    }
+
   </style>
 </head>
 
@@ -22,16 +30,28 @@
   <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
   <script src="./bootstrap.js"></script>
 
-  <span>
+  <!-- <span>
     Post request response from <a href="https://shopify.dev/api/admin-rest">Shopify web admin </a>
   </span>
-  <pre id="output2"></pre>
+  <pre id="output2"></pre> -->
 
   <span>
     Dynamic example - 
   </span>
 
   <label for="url">Enter url (must be a json endpoint)</label>
+  
+  <span class="key">e.g</span>
+  <ul>
+    <li>https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/json/api-with-examples.json</li>
+    <li>https://dummyjson.com/products</li>
+    <li>https://gist.githubusercontent.com/tuldok89/cf99b808ba0168054970bc60fbfb25c4/raw/ed635c262124fe88491ae25e56919b644994e66a/shopify.json</li>
+    <li>https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/managementgroup-deployments/create-subscription-resourcegroup/azuredeploy.json</li>
+  </ul>
+
+  </ul>
+
+  </ul>
 
   <p>
     <input type="text" id="url" name="url" required size="128"
@@ -39,9 +59,16 @@
   </p>
   <p>
     <button id="button">Get Data</button>
+    <button id="clear">Clear</button>
   </p>
+  <br>
+  <span class="key">Key: </span><span class="value">Value</span>
   <pre id="output"></pre>
   </p>
+
+  <pre>
+  <div id="colordiv"></div>
+  </pre>
 </body>
 
 </html>
