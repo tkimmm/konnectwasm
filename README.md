@@ -5,7 +5,7 @@
 
 ## About
 
-The static HTML page will render two json examples taken from 
+A static HTML page which should handle the pre-processing of a deeply nested JSON on the client side
 - https://shopify.dev/api/admin-rest (smaller example)
 - https://gist.githubusercontent.com/tuldok89/cf99b808ba0168054970bc60fbfb25c4/raw/ed635c262124fe88491ae25e56919b644994e66a/shopify.json (larger 2.5mb example)
 
