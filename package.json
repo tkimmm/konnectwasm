@@ -24,10 +24,10 @@
   },
   "homepage": "",
   "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+      "copy-webpack-plugin": "^11.0.0",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0",
+      "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "@teekm/konnectwasm": "^0.1.0"
