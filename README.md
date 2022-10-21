@@ -1,22 +1,29 @@
 <div align="center">
-  <h1><code>konnect-demo</code></h1>
-  <strong>An <code>Rust Webassembly</code> static site demonstrating json array flattening client-side.</strong>
+  <h1><code>konnect-wasm</code></h1>
+  <strong>A <code>Rust Webassembly</code> static site demonstrating json array flattening client-side.</strong>
 </div>
 
 ## About
 
-N/A
-The static HTML page will render two json examples taken from https://shopify.dev/api/admin-rest and a 2.5 mb file from https://gist.githubusercontent.com/tuldok89/cf99b808ba0168054970bc60fbfb25c4/raw/ed635c262124fe88491ae25e56919b644994e66a/shopify.json
+The static HTML page will render two json examples taken from 
+- https://shopify.dev/api/admin-rest (smaller example)
+- https://gist.githubusercontent.com/tuldok89/cf99b808ba0168054970bc60fbfb25c4/raw/ed635c262124fe88491ae25e56919b644994e66a/shopify.json (larger 2.5mb example)
 
+The wasm accepts a ```JSON.stringify(obj)``` and under the hood is using <a href="https://crates.io/crates/flatten-json-object">flatten-json-object</a>
 
 ## 🚴 Usage
 
 ```
-npm install && npm run 
+npm install && npm run start
 ```
+Will start the webpack-dev-server, navigate to http://localhost:8080 
 
-## 🔋 Batteries Included
 
+To import into your own project simply run
+
+```
+npm install @teekm/konnectwasm
+```
 
 ## License
 
